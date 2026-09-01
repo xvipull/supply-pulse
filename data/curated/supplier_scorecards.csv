@@ -1,0 +1,7 @@
+supplier_id,supplier_name,tier,spend,otif,fill_rate,defect_rate,compliance,ppv,risk_score,risk_band,po_count
+SUP-005,Cobalt Supply Co.,Approved,1004586.18,25.6,92.3,0.1,79.5,42200.51,33.9,Critical,39
+SUP-004,Vertex Packaging,Preferred,2138017.13,27.3,93.9,0.0,96.4,80592.78,29.7,Critical,55
+SUP-002,Meridian Industrial,Strategic,934839.95,30.0,93.1,0.1,96.7,41765.36,29.0,Critical,30
+SUP-003,Atlas Materials,Preferred,928182.5,29.4,93.7,0.0,97.1,41743.8,28.8,Critical,34
+SUP-006,Pioneer Logistics,Approved,1396117.74,35.1,95.8,0.2,91.9,53888.31,27.6,Critical,37
+SUP-001,Northstar Components,Strategic,1815131.69,40.0,95.8,0.0,88.9,81380.74,25.9,Critical,45

@@ -1,0 +1,1 @@
+{"name":"supply-pulse","version":"1.0.0","private":true,"scripts":{"test":"python3 -m unittest discover -s tests","build":"python3 src/generate_data.py && python3 src/pipeline.py"}}

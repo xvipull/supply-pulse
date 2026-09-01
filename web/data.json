@@ -1,0 +1,255 @@
+{
+  "generated_at": "2025-09-01",
+  "totals": {
+    "spend": 8216875.19,
+    "ppv": 341571.5,
+    "otif": 31.2,
+    "fill_rate": 94.2,
+    "compliance": 91.7,
+    "three_way_match": 0.4
+  },
+  "suppliers": [
+    {
+      "supplier_id": "SUP-005",
+      "supplier_name": "Cobalt Supply Co.",
+      "tier": "Approved",
+      "spend": 1004586.18,
+      "otif": 25.6,
+      "fill_rate": 92.3,
+      "defect_rate": 0.1,
+      "compliance": 79.5,
+      "ppv": 42200.51,
+      "risk_score": 33.9,
+      "risk_band": "Critical",
+      "po_count": 39
+    },
+    {
+      "supplier_id": "SUP-004",
+      "supplier_name": "Vertex Packaging",
+      "tier": "Preferred",
+      "spend": 2138017.13,
+      "otif": 27.3,
+      "fill_rate": 93.9,
+      "defect_rate": 0.0,
+      "compliance": 96.4,
+      "ppv": 80592.78,
+      "risk_score": 29.7,
+      "risk_band": "Critical",
+      "po_count": 55
+    },
+    {
+      "supplier_id": "SUP-002",
+      "supplier_name": "Meridian Industrial",
+      "tier": "Strategic",
+      "spend": 934839.95,
+      "otif": 30.0,
+      "fill_rate": 93.1,
+      "defect_rate": 0.1,
+      "compliance": 96.7,
+      "ppv": 41765.36,
+      "risk_score": 29.0,
+      "risk_band": "Critical",
+      "po_count": 30
+    },
+    {
+      "supplier_id": "SUP-003",
+      "supplier_name": "Atlas Materials",
+      "tier": "Preferred",
+      "spend": 928182.5,
+      "otif": 29.4,
+      "fill_rate": 93.7,
+      "defect_rate": 0.0,
+      "compliance": 97.1,
+      "ppv": 41743.8,
+      "risk_score": 28.8,
+      "risk_band": "Critical",
+      "po_count": 34
+    },
+    {
+      "supplier_id": "SUP-006",
+      "supplier_name": "Pioneer Logistics",
+      "tier": "Approved",
+      "spend": 1396117.74,
+      "otif": 35.1,
+      "fill_rate": 95.8,
+      "defect_rate": 0.2,
+      "compliance": 91.9,
+      "ppv": 53888.31,
+      "risk_score": 27.6,
+      "risk_band": "Critical",
+      "po_count": 37
+    },
+    {
+      "supplier_id": "SUP-001",
+      "supplier_name": "Northstar Components",
+      "tier": "Strategic",
+      "spend": 1815131.69,
+      "otif": 40.0,
+      "fill_rate": 95.8,
+      "defect_rate": 0.0,
+      "compliance": 88.9,
+      "ppv": 81380.74,
+      "risk_score": 25.9,
+      "risk_band": "Critical",
+      "po_count": 45
+    }
+  ],
+  "monthly": [
+    {
+      "month": "2025-01",
+      "otif": 40.0,
+      "spend": 722643.79
+    },
+    {
+      "month": "2025-02",
+      "otif": 24.1,
+      "spend": 1003193.63
+    },
+    {
+      "month": "2025-03",
+      "otif": 30.0,
+      "spend": 832807.57
+    },
+    {
+      "month": "2025-04",
+      "otif": 21.2,
+      "spend": 1009637.7
+    },
+    {
+      "month": "2025-05",
+      "otif": 33.3,
+      "spend": 1390601.57
+    },
+    {
+      "month": "2025-06",
+      "otif": 34.6,
+      "spend": 1060325.8
+    },
+    {
+      "month": "2025-07",
+      "otif": 39.4,
+      "spend": 895185.59
+    },
+    {
+      "month": "2025-08",
+      "otif": 29.0,
+      "spend": 1302479.54
+    }
+  ],
+  "categories": [
+    {
+      "name": "Electronics",
+      "spend": 3720288.6
+    },
+    {
+      "name": "Mechanical",
+      "spend": 2497199.47
+    },
+    {
+      "name": "MRO",
+      "spend": 1162085.94
+    },
+    {
+      "name": "Packaging",
+      "spend": 837301.18
+    }
+  ],
+  "exceptions": [
+    {
+      "po_id": "PO-0130",
+      "supplier": "Pioneer Logistics",
+      "issue": "Price variance",
+      "value": 12950.0,
+      "days_late": -2,
+      "spend": 128365.0
+    },
+    {
+      "po_id": "PO-0181",
+      "supplier": "Northstar Components",
+      "issue": "Price variance",
+      "value": 11095.0,
+      "days_late": -2,
+      "spend": 129125.0
+    },
+    {
+      "po_id": "PO-0197",
+      "supplier": "Northstar Components",
+      "issue": "Price variance",
+      "value": 9105.0,
+      "days_late": -1,
+      "spend": 85665.0
+    },
+    {
+      "po_id": "PO-0239",
+      "supplier": "Atlas Materials",
+      "issue": "Price variance",
+      "value": 7975.0,
+      "days_late": 0,
+      "spend": 120370.0
+    },
+    {
+      "po_id": "PO-0222",
+      "supplier": "Vertex Packaging",
+      "issue": "Late & partial",
+      "value": 7555.5,
+      "days_late": -1,
+      "spend": 116010.0
+    },
+    {
+      "po_id": "PO-0075",
+      "supplier": "Vertex Packaging",
+      "issue": "Price variance",
+      "value": 7180.0,
+      "days_late": -2,
+      "spend": 127625.0
+    },
+    {
+      "po_id": "PO-0085",
+      "supplier": "Northstar Components",
+      "issue": "Late & partial",
+      "value": 7011.0,
+      "days_late": 2,
+      "spend": 92886.25
+    },
+    {
+      "po_id": "PO-0140",
+      "supplier": "Vertex Packaging",
+      "issue": "Price variance",
+      "value": 6905.0,
+      "days_late": -1,
+      "spend": 125205.0
+    },
+    {
+      "po_id": "PO-0121",
+      "supplier": "Northstar Components",
+      "issue": "Price variance",
+      "value": 6852.0,
+      "days_late": 0,
+      "spend": 82125.0
+    },
+    {
+      "po_id": "PO-0208",
+      "supplier": "Meridian Industrial",
+      "issue": "Late & partial",
+      "value": 6426.0,
+      "days_late": -2,
+      "spend": 73755.0
+    },
+    {
+      "po_id": "PO-0057",
+      "supplier": "Vertex Packaging",
+      "issue": "Late & partial",
+      "value": 5956.5,
+      "days_late": 1,
+      "spend": 83319.75
+    },
+    {
+      "po_id": "PO-0109",
+      "supplier": "Vertex Packaging",
+      "issue": "Late & partial",
+      "value": 5877.0,
+      "days_late": -2,
+      "spend": 123741.0
+    }
+  ]
+}

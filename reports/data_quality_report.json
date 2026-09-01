@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "row_count": 240,
+  "duplicate_po_ids": 0,
+  "required_columns_missing": [],
+  "referential_integrity": "PASS",
+  "reconciliation": {
+    "raw_spend": 8216875.19,
+    "reporting_spend": 8216875.19,
+    "difference": 0
+  }
+}

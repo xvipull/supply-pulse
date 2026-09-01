@@ -1,0 +1,11 @@
+const fmtMoney=n=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',notation:'compact',maximumFractionDigits:1}).format(n);
+const el=id=>document.getElementById(id); let all;
+function render(d, tier='All'){
+ const s=tier==='All'?d.suppliers:d.suppliers.filter(x=>x.tier===tier); const spend=s.reduce((a,x)=>a+x.spend,0), weighted=(key)=>s.reduce((a,x)=>a+x[key]*x.po_count,0)/s.reduce((a,x)=>a+x.po_count,0);
+ el('otif').textContent=weighted('otif').toFixed(1)+'%'; el('spend').textContent=fmtMoney(spend); el('compliance').textContent=weighted('compliance').toFixed(1)+'%'; el('ppv').textContent=fmtMoney(s.reduce((a,x)=>a+x.ppv,0));
+ el('risk-list').innerHTML=s.map(x=>`<div class="risk-row"><div><div class="supplier-name">${x.supplier_name}</div><div class="supplier-tier">${x.tier.toUpperCase()} · ${fmtMoney(x.spend)}</div></div><div class="rail"><i style="width:${Math.min(x.risk_score*3,100)}%"></i></div><span class="band ${x.risk_band.toLowerCase()}">${x.risk_band}</span></div>`).join('');
+ el('trend-chart').innerHTML=d.monthly.map((x,i)=>`<div class="bar-group"><div class="bar ${i===d.monthly.length-1?'last':''}" style="height:${Math.max(20,x.otif)}%" title="${x.month}: ${x.otif}%"></div></div>`).join('');
+ const colors=['#2d6247','#9ccf71','#e8bf67','#e98b64']; let total=d.categories.reduce((a,x)=>a+x.spend,0); el('category-chart').innerHTML=d.categories.map((x,i)=>`<div class="category-seg" style="width:${x.spend/total*100}%;background:${colors[i]}"></div>`).join(''); el('category-key').innerHTML=d.categories.map((x,i)=>`<div class="key"><i class="dot" style="background:${colors[i]}"></i>${x.name}<b style="float:right">${Math.round(x.spend/total*100)}%</b></div>`).join('');
+ el('exceptions').innerHTML=d.exceptions.slice(0,5).map(x=>`<tr><td>${x.po_id}</td><td>${x.supplier}</td><td><span class="issue">${x.issue}</span></td><td class="impact">${fmtMoney(x.value)}</td></tr>`).join(''); el('exception-count').textContent=`${d.exceptions.length} priority items`;
+}
+fetch('data.json').then(r=>r.json()).then(d=>{all=d;el('refresh').textContent=d.generated_at;render(d);document.querySelectorAll('.filter').forEach(b=>b.onclick=()=>{document.querySelector('.filter.active').classList.remove('active');b.classList.add('active');render(all,b.dataset.tier)})});
